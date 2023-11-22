@@ -53,28 +53,43 @@ body{
 /* contenitore immagini */
 main{
     position: relative;
+    display: flex;
     margin: 0 auto;
     width: 90%;
 }
 
 .immagini-zoom{
     position: absolute;
-    top: 120px;
+    top: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
-   
+    row-gap: 15px;
+    column-gap: 5px;
 }
 
-.immagini-zoom .zoom {
-   display: flex;
-   gap: 5px;
+.zoom{
+    position: relative;
+}
+.immagini-zoom img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 185px;
+    width: 285px; 
 }
 
-.immagini-zoom .zoom img{
-    background-color: red;
-    height: 200px;
-    width: 300px;
-    
+.text{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    height: auto;
+    width: auto;
+    background-color:grey ;
+    color: white;
+    padding: 5px;
+}
+
+.text svg{
+    fill: white;
 }
